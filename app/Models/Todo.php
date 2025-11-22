@@ -6,21 +6,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Todo extends Model
 {
-    protected $fillable = [
-        'user_id',
-        'title',
-        'is_completed',
-    ];
+    protected $fillable = ['user_id', 'project_id', 'title', 'is_completed'];
 
-    protected function casts(): array
-    {
-        return [
-            'is_completed' => 'boolean',
-        ];
-    }
+    protected $casts = [
+        'is_completed' => 'boolean',
+    ];
 
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
     }
 }
