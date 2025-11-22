@@ -6,8 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center gap-2">
                     <a href="{{ route('dashboard') }}" class="flex items-center gap-2 group">
-                        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md shadow-indigo-600/20 group-hover:scale-105 transition">T</div>
-                        <span class="font-bold text-lg tracking-tight text-slate-900 dark:text-white">Todo<span class="text-indigo-600">App</span></span>
+                        <div class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-md shadow-teal-600/20 group-hover:scale-105 transition">T</div>
+                        <span class="font-bold text-lg tracking-tight text-slate-900 dark:text-white">Todo<span class="text-teal-600">App</span></span>
                     </a>
                 </div>
             </div>

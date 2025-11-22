@@ -22,14 +22,14 @@
             
             <!-- Background Decoration -->
             <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full z-0 pointer-events-none">
-                <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+                <div class="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
                 <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
             </div>
 
             <div class="relative z-10 mb-6">
                 <a href="/" class="flex items-center gap-2">
-                    <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-indigo-600/20">T</div>
-                    <span class="font-bold text-2xl tracking-tight text-slate-900 dark:text-white">Todo<span class="text-indigo-600">App</span></span>
+                    <div class="w-10 h-10 bg-teal-600 rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-teal-600/20">T</div>
+                    <span class="font-bold text-2xl tracking-tight text-slate-900 dark:text-white">Todo<span class="text-teal-600">App</span></span>
                 </a>
             </div>
 

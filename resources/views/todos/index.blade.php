@@ -14,7 +14,7 @@
 
             <!-- Add Todo Form -->
             <div class="mb-8 relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-200"></div>
+                <div class="absolute -inset-1 bg-gradient-to-r from-teal-500 to-teal-600 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-200"></div>
                 <form action="{{ route('todos.store') }}" method="POST" class="relative bg-white dark:bg-slate-800 rounded-xl shadow-sm border border-slate-200 dark:border-slate-700 flex items-center p-2">
                     @csrf
                     @if($currentProject)
@@ -32,7 +32,7 @@
                         autofocus
                         autocomplete="off"
                     >
-                    <button type="submit" class="px-6 py-2.5 bg-slate-900 dark:bg-indigo-600 text-white font-medium rounded-lg hover:bg-slate-800 dark:hover:bg-indigo-500 transition shadow-lg shadow-slate-900/20 dark:shadow-indigo-600/20">
+                    <button type="submit" class="px-6 py-2.5 bg-slate-900 dark:bg-teal-600 text-white font-medium rounded-lg hover:bg-slate-800 dark:hover:bg-teal-500 transition shadow-lg shadow-slate-900/20 dark:shadow-teal-600/20">
                         Add
                     </button>
                 </form>
@@ -41,12 +41,12 @@
             <!-- Todo List -->
             <div class="space-y-3">
                 @forelse ($todos as $todo)
-                    <div class="group flex items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-indigo-500/30 dark:hover:border-indigo-500/30 transition duration-200">
+                    <div class="group flex items-center justify-between p-4 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-md hover:border-teal-500/30 dark:hover:border-teal-500/30 transition duration-200">
                         <div class="flex items-center gap-4 flex-1 min-w-0">
                             <form action="{{ route('todos.update', $todo) }}" method="POST">
                                 @csrf
                                 @method('PUT')
-                                <button type="submit" class="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full border-2 {{ $todo->is_completed ? 'bg-indigo-500 border-indigo-500' : 'border-slate-300 dark:border-slate-600 hover:border-indigo-500 dark:hover:border-indigo-500' }} transition duration-200">
+                                <button type="submit" class="flex-shrink-0 flex items-center justify-center w-6 h-6 rounded-full border-2 {{ $todo->is_completed ? 'bg-teal-500 border-teal-500' : 'border-slate-300 dark:border-slate-600 hover:border-teal-500 dark:hover:border-teal-500' }} transition duration-200">
                                     @if ($todo->is_completed)
                                         <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
                                     @endif
